@@ -47,9 +47,53 @@ module traffic_light_controller(
      increment 5-counter whenever my own traffic is absent
      increment 10-counter whenever I have a green light
 */
-	  GRR: begin
+      GRR: begin
          // when is next_state GRR? YRR?
          // what does ctr5 do? ctr10?
+      end
+      YRR: begin
+        next_state = ZRR;
+      end
+      ZRR: begin
+        next_state = HRR;
+      end
+      HRR: begin
+             if (ew_left_sensor) next_state = RGR;
+        else if (     ns_sensor) next_state = RRG;
+        else if ( ew_str_sensor) next_state = GRR;
+        else                     next_state = HRR;
+      end
+      RGR: begin
+         // when is next_state RGR? RYR?
+         // what does ctr5 do? ctr10?
+      end
+      RYR: begin
+        next_state = RZR;
+      end
+      RZR: begin
+        next_state = RHR;
+      end
+      RHR: begin
+             if (     ns_sensor) next_state = RRG;
+        else if ( ew_str_sensor) next_state = GRR;
+        else if (ew_left_sensor) next_state = RGR;
+        else                     next_state = RHR;
+      end
+      RRG: begin
+         // when is next_state RRG? RRY?
+         // what does ctr5 do? ctr10?
+      end
+      RRY: begin
+        next_state = RRZ;
+      end
+      RRZ: begin
+        next_state = RRH;
+      end
+      RRH: begin
+             if ( ew_str_sensor) next_state = GRR;
+        else if (ew_left_sensor) next_state = RGR;
+        else if (     ns_sensor) next_state = RRG;
+        else                     next_state = RRH;
       end
      // etc.
     endcase
@@ -57,9 +101,9 @@ module traffic_light_controller(
 
 // combination output driver  ("C2" block in the Harris & Harris Moore machine diagram)
   always_comb begin
-    ew_str_light = red;                // cover all red plus undefined cases
+     ew_str_light = red;                // cover all red plus undefined cases
     ew_left_light = red;
-    ns_light = red;
+         ns_light = red;
     case(present_state)      // Moore machine
       GRR:      ew_str_light = green;
       YRR,ZRR:  ew_str_light = yellow;  // my dual yellow states -- brute force way to make yellow last 2 cycles
