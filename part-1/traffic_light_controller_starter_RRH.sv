@@ -9,14 +9,15 @@ import light_package ::*;           // defines red, yellow, green
 
 // same as Harris & Harris 4-state, but we have added two all-reds
 module traffic_light_controller(
-  input clk, reset, ew_str_sensor, ew_left_sensor, ns_sensor,  // traffic sensors, east-west straight, east-west left, north-south 
-  output colors ew_str_light, ew_left_light, ns_light);     // traffic lights, east-west straight, east-west left, north-south
+  input         clk, reset,
+                ew_str_sensor, ew_left_sensor, ns_sensor,  // traffic sensors, east-west straight, east-west left, north-south 
+  output colors ew_str_light,  ew_left_light,  ns_light);  // traffic lights, east-west straight, east-west left, north-south
 
 // HRR = red-red following YRR; RRH = red-red following RRY;
 // ZRR = 2nd cycle yellow, follows YRR, etc.
   typedef enum {GRR, YRR, ZRR, HRR, RGR, RYR, RZR, RHR, RRG, RRY, RRZ, RRH} tlc_states;
   tlc_states    present_state, next_state;
-  integer ctr5, next_ctr5,       //  5 sec timeout when my traffic goes away
+  integer ctr5,  next_ctr5,      //  5 sec timeout when my traffic goes away
           ctr10, next_ctr10;     // 10 sec limit when other traffic presents
 
 // sequential part of our state machine (register between C1 and C2 in Harris & Harris Moore machine diagram
@@ -56,8 +57,6 @@ module traffic_light_controller(
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? YRR : GRR;
       end
       YRR: begin
-        next_ctr5  =   0; // reset counters
-        next_ctr10 =   0;
         next_state = ZRR;
       end
       ZRR: begin
@@ -78,8 +77,6 @@ module traffic_light_controller(
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RYR : RGR;
       end
       RYR: begin
-        next_ctr5  =   0; // reset counters
-        next_ctr10 =   0;
         next_state = RZR;
       end
       RZR: begin
@@ -100,8 +97,6 @@ module traffic_light_controller(
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RRY : RRG;
       end
       RRY: begin
-        next_ctr5  =   0; // reset counters
-        next_ctr10 =   0;
         next_state = RRZ;
       end
       RRZ: begin
