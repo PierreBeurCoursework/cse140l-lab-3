@@ -48,10 +48,16 @@ module traffic_light_controller(
      increment 10-counter whenever I have a green light
 */
       GRR: begin
-         // when is next_state GRR? YRR?
-         // what does ctr5 do? ctr10?
+        // start ctr5 when a gap in traffic is detected
+        next_ctr5  = ctr5  + (!ew_str_sensor || ctr5 > 0);
+        // start ctr10 when cross traffic is detected
+        next_ctr10 = ctr10 + (ew_left_sensor || ns_sensor || ctr10 > 0);
+        // go to yellow when either ctr ends
+        next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? YRR : GRR;
       end
       YRR: begin
+        next_ctr5  =   0; // reset counters
+        next_ctr10 =   0;
         next_state = ZRR;
       end
       ZRR: begin
@@ -64,10 +70,16 @@ module traffic_light_controller(
         else                     next_state = HRR;
       end
       RGR: begin
-         // when is next_state RGR? RYR?
-         // what does ctr5 do? ctr10?
+        // start ctr5 when a gap in traffic is detected
+        next_ctr5  = ctr5  + (!ew_left_sensor || ctr5 > 0);
+        // start ctr10 when cross traffic is detected
+        next_ctr10 = ctr10 + (ns_sensor || ew_str_sensor || ctr10 > 0);
+        // go to yellow when either ctr ends
+        next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RYR : RGR;
       end
       RYR: begin
+        next_ctr5  =   0; // reset counters
+        next_ctr10 =   0;
         next_state = RZR;
       end
       RZR: begin
@@ -80,10 +92,16 @@ module traffic_light_controller(
         else                     next_state = RHR;
       end
       RRG: begin
-         // when is next_state RRG? RRY?
-         // what does ctr5 do? ctr10?
+        // start ctr5 when a gap in traffic is detected
+        next_ctr5  = ctr5  + (!ns_sensor || ctr5 > 0);
+        // start ctr10 when cross traffic is detected
+        next_ctr10 = ctr10 + (ew_str_sensor || ew_left_sensor || ctr10 > 0);
+        // go to yellow when either ctr ends
+        next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RRY : RRG;
       end
       RRY: begin
+        next_ctr5  =   0; // reset counters
+        next_ctr10 =   0;
         next_state = RRZ;
       end
       RRZ: begin
@@ -95,7 +113,6 @@ module traffic_light_controller(
         else if (     ns_sensor) next_state = RRG;
         else                     next_state = RRH;
       end
-     // etc.
     endcase
   end
 
