@@ -39,6 +39,8 @@ assign ns  = ns_light    ;
 int fl, gl = 4;                      // handle for target file
 int test_cnt;                     // lets testbench count number of test scenarios
 initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars;
   fl = $fopen("result.txt","w");
   gl = $fopen("result2.txt","w");
   $fdisplay(fl,"t   t   t   t   t    e    e    w    w    n");    // header for y, g status display
