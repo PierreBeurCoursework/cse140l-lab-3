@@ -1,0 +1,258 @@
+t   t   t   e   e   n
+s   l   n   w   w   s
+            s   l    
+Test Case:           0
+                                            8
+                                           18
+                                           28
+Test Case:           1
+    el          lg                         38
+es  el          lg                         48
+es              lg                         58
+es              lg                         68
+es              lg                         78
+es              lg                         88
+es              ly                         98
+es              ly                        108
+es                                        118
+es          sg                            128
+es          sg                            138
+es          sg                            148
+            sg                            158
+            sg                            168
+            sg                            178
+            sg                            188
+            sy                            198
+            sy                            208
+                                          218
+                                          228
+                                          238
+                                          248
+                                          258
+                                          268
+                                          278
+                                          288
+                                          298
+                                          308
+                                          318
+                                          328
+                                          338
+                                          348
+Test Case:           2
+        ns          ng                    358
+        ns          ng                    368
+        ns          ng                    378
+        ns          ng                    388
+                    ng                    398
+                    ng                    408
+                    ng                    418
+                    ng                    428
+                    ny                    438
+                    ny                    448
+                                          458
+                                          468
+                                          478
+                                          488
+                                          498
+                                          508
+                                          518
+                                          528
+                                          538
+                                          548
+                                          558
+                                          568
+                                          578
+                                          588
+Test Case:           3
+        ns          ng                    598
+        ns          ng                    608
+        ns          ng                    618
+        ns          ng                    628
+        ns          ng                    638
+        ns          ng                    648
+        ns          ng                    658
+        ns          ng                    668
+        ns          ng                    678
+        ns          ng                    688
+    el  ns          ng                    698
+    el  ns          ng                    708
+    el  ns          ng                    718
+    el  ns          ng                    728
+    el  ns          ng                    738
+    el  ns          ng                    748
+    el  ns          ng                    758
+    el  ns          ng                    768
+    el  ns          ng                    778
+    el  ns          ny                    788
+    el  ns          ny                    798
+    el  ns                                808
+    el  ns      lg                        818
+    el  ns      lg                        828
+    el  ns      lg                        838
+    el  ns      lg                        848
+    el  ns      lg                        858
+    el  ns      lg                        868
+    el  ns      lg                        878
+    el  ns      lg                        888
+    el          lg                        898
+                lg                        908
+                ly                        918
+                ly                        928
+                                          938
+                                          948
+                                          958
+                                          968
+                                          978
+                                          988
+                                          998
+                                         1008
+                                         1018
+                                         1028
+                                         1038
+                                         1048
+                                         1058
+                                         1068
+                                         1078
+                                         1088
+                                         1098
+Test Case:           4
+es  el  ns          ng                   1108
+es  el  ns          ng                   1118
+es  el  ns          ng                   1128
+es  el  ns          ng                   1138
+es  el  ns          ng                   1148
+es  el  ns          ng                   1158
+es  el  ns          ng                   1168
+es  el  ns          ng                   1178
+es  el  ns          ng                   1188
+es  el  ns          ng                   1198
+es  el  ns          ny                   1208
+es  el  ns          ny                   1218
+es  el  ns                               1228
+es  el  ns  sg                           1238
+es  el  ns  sg                           1248
+es  el  ns  sg                           1258
+es  el  ns  sg                           1268
+es  el  ns  sg                           1278
+es  el  ns  sg                           1288
+es  el  ns  sg                           1298
+es  el  ns  sg                           1308
+es  el  ns  sg                           1318
+es  el  ns  sg                           1328
+es  el  ns  sy                           1338
+es  el  ns  sy                           1348
+es  el  ns                               1358
+es  el  ns      lg                       1368
+es  el  ns      lg                       1378
+es  el  ns      lg                       1388
+es  el  ns      lg                       1398
+es  el  ns      lg                       1408
+es  el  ns      lg                       1418
+es  el  ns      lg                       1428
+es  el  ns      lg                       1438
+es  el  ns      lg                       1448
+es  el  ns      lg                       1458
+es  el  ns      ly                       1468
+es  el  ns      ly                       1478
+es  el  ns                               1488
+es  el  ns          ng                   1498
+es  el  ns          ng                   1508
+es  el  ns          ng                   1518
+es  el  ns          ng                   1528
+es  el  ns          ng                   1538
+es  el  ns          ng                   1548
+es  el  ns          ng                   1558
+es  el  ns          ng                   1568
+es  el  ns          ng                   1578
+es  el  ns          ng                   1588
+es  el  ns          ny                   1598
+es  el  ns          ny                   1608
+es  el  ns                               1618
+es  el  ns  sg                           1628
+es  el  ns  sg                           1638
+es  el  ns  sg                           1648
+es  el  ns  sg                           1658
+es  el  ns  sg                           1668
+es  el  ns  sg                           1678
+es  el  ns  sg                           1688
+es  el  ns  sg                           1698
+es  el  ns  sg                           1708
+es  el  ns  sg                           1718
+es  el  ns  sy                           1728
+es  el  ns  sy                           1738
+es  el  ns                               1748
+es  el  ns      lg                       1758
+es  el  ns      lg                       1768
+es  el  ns      lg                       1778
+es  el  ns      lg                       1788
+es  el  ns      lg                       1798
+es  el  ns      lg                       1808
+es  el  ns      lg                       1818
+es  el  ns      lg                       1828
+es  el  ns      lg                       1838
+es  el  ns      lg                       1848
+es  el  ns      ly                       1858
+es  el  ns      ly                       1868
+es  el  ns                               1878
+es  el  ns          ng                   1888
+es  el  ns          ng                   1898
+es  el  ns          ng                   1908
+es  el  ns          ng                   1918
+es  el  ns          ng                   1928
+es  el  ns          ng                   1938
+es  el  ns          ng                   1948
+es  el  ns          ng                   1958
+es  el  ns          ng                   1968
+es  el  ns          ng                   1978
+es  el  ns          ny                   1988
+es  el  ns          ny                   1998
+es  el  ns                               2008
+es  el  ns  sg                           2018
+es  el  ns  sg                           2028
+es  el  ns  sg                           2038
+es  el  ns  sg                           2048
+es  el  ns  sg                           2058
+es  el  ns  sg                           2068
+es  el  ns  sg                           2078
+es  el  ns  sg                           2088
+es  el  ns  sg                           2098
+es      ns  sg                           2108
+es      ns  sy                           2118
+es      ns  sy                           2128
+es      ns                               2138
+es      ns          ng                   2148
+es      ns          ng                   2158
+es      ns          ng                   2168
+es      ns          ng                   2178
+es      ns          ng                   2188
+es      ns          ng                   2198
+es      ns          ng                   2208
+es      ns          ng                   2218
+es      ns          ng                   2228
+es      ns          ng                   2238
+es      ns          ny                   2248
+es      ns          ny                   2258
+es      ns                               2268
+es      ns  sg                           2278
+es      ns  sg                           2288
+es      ns  sg                           2298
+            sg                           2308
+            sg                           2318
+            sg                           2328
+            sg                           2338
+            sy                           2348
+            sy                           2358
+                                         2368
+                                         2378
+                                         2388
+                                         2398
+                                         2408
+                                         2418
+                                         2428
+                                         2438
+                                         2448
+                                         2458
+                                         2468
+                                         2478
+                                         2488
+                                         2498
