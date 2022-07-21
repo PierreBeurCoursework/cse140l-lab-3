@@ -26,6 +26,8 @@ traffic_light_controller dut(.clk, .reset,
 int fi;
 int test_cnt;          // lets testbench track tests
 initial begin
+  $dumpfile("dump.vcd");
+  $dumpvars;
   fi = $fopen("lab3_part1_results.txt","w");
   $fdisplay(fi,"t   t   t   e   e   n");	   // header for y, g status display
   $fdisplay(fi,"s   l   n   w   w   s");
