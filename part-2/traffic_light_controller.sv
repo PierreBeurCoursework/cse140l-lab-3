@@ -46,7 +46,8 @@ module traffic_light_controller(
       ctr10         <= next_ctr10;
     end
 
-logic s_sn, e_sn, w_sn, l_sn, n_sn;
+logic  s_sn,  e_sn,  w_sn,  l_sn,  n_sn,
+      sx_sn, ex_sn, wx_sn, lx_sn, nx_sn;
 
 // combinational part of state machine ("C1" block in the Harris & Harris Moore machine diagram)
 // default needed because only 6 of 8 possible states are defined/used
@@ -55,11 +56,17 @@ logic s_sn, e_sn, w_sn, l_sn, n_sn;
     next_ctr5  = 0;
     next_ctr10 = 0;
     
-    s_sn =  e_str_sensor &&  w_str_sensor ;
-    e_sn = e_left_sensor &&  e_str_sensor ;
-    w_sn = w_left_sensor &&  w_str_sensor ;
-    l_sn = e_left_sensor && w_left_sensor ;
-    n_sn = ns_sensor;
+     s_sn =  e_str_sensor &&  w_str_sensor ;
+     e_sn = e_left_sensor &&  e_str_sensor ;
+     w_sn = w_left_sensor &&  w_str_sensor ;
+     l_sn = e_left_sensor && w_left_sensor ;
+     n_sn = ns_sensor;
+
+    sx_sn =  e_str_sensor ||  w_str_sensor ;
+    ex_sn = e_left_sensor ||  e_str_sensor ;
+    wx_sn = w_left_sensor ||  w_str_sensor ;
+    lx_sn = e_left_sensor || w_left_sensor ;
+    nx_sn = ns_sensor;
 
     case(present_state)
 /* ************* Fill in the case statements ************** */
@@ -73,86 +80,86 @@ logic s_sn, e_sn, w_sn, l_sn, n_sn;
         // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!s_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
-        next_ctr10 = ctr10 + (e_sn || w_sn || l_sn || n_sn || ctr10 > 0);
+        next_ctr10 = ctr10 + (ex_sn || wx_sn || lx_sn || nx_sn || ctr10 > 0);
         // go to yellow when either ctr ends
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? YRRRR : GRRRR;
       end
       YRRRR: next_state = ZRRRR;
       ZRRRR: next_state = HRRRR;
       HRRRR: begin
-             if (e_sn) next_state = RGRRR;
-        else if (w_sn) next_state = RRGRR;
-        else if (l_sn) next_state = RRRGR;
-        else if (n_sn) next_state = RRRRG;
-        else           next_state = HRRRR;
+             if (ex_sn) next_state = RGRRR;
+        else if (wx_sn) next_state = RRGRR;
+        else if (lx_sn) next_state = RRRGR;
+        else if (nx_sn) next_state = RRRRG;
+        else            next_state = HRRRR;
       end
       RGRRR: begin
         // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!e_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
-        next_ctr10 = ctr10 + (w_sn || l_sn || n_sn || s_sn || ctr10 > 0);
+        next_ctr10 = ctr10 + (wx_sn || lx_sn || nx_sn || sx_sn || ctr10 > 0);
         // go to yellow when either ctr ends
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RYRRR : RGRRR;
       end
       RYRRR: next_state = RZRRR;
       RZRRR: next_state = RHRRR;
       RHRRR: begin
-             if (w_sn) next_state = RRGRR;
-        else if (l_sn) next_state = RRRGR;
-        else if (n_sn) next_state = RRRRG;
-        else if (s_sn) next_state = GRRRR;
-        else           next_state = RHRRR;
+             if (wx_sn) next_state = RRGRR;
+        else if (lx_sn) next_state = RRRGR;
+        else if (nx_sn) next_state = RRRRG;
+        else if (sx_sn) next_state = GRRRR;
+        else            next_state = RHRRR;
       end
       RRGRR: begin
         // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!w_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
-        next_ctr10 = ctr10 + (l_sn || n_sn || s_sn || e_sn || ctr10 > 0);
+        next_ctr10 = ctr10 + (lx_sn || nx_sn || sx_sn || ex_sn || ctr10 > 0);
         // go to yellow when either ctr ends
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RRYRR : RRGRR;
       end
       RRYRR: next_state = RRZRR;
       RRZRR: next_state = RRHRR;
       RRHRR: begin
-             if (l_sn) next_state = RRRGR;
-        else if (n_sn) next_state = RRRRG;
-        else if (s_sn) next_state = GRRRR;
-        else if (e_sn) next_state = RGRRR;
-        else           next_state = RRHRR;
+             if (lx_sn) next_state = RRRGR;
+        else if (nx_sn) next_state = RRRRG;
+        else if (sx_sn) next_state = GRRRR;
+        else if (ex_sn) next_state = RGRRR;
+        else            next_state = RRHRR;
       end
       RRRGR: begin
         // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!l_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
-        next_ctr10 = ctr10 + (n_sn || s_sn || e_sn || w_sn || ctr10 > 0);
+        next_ctr10 = ctr10 + (nx_sn || sx_sn || ex_sn || wx_sn || ctr10 > 0);
         // go to yellow when either ctr ends
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RRRYR : RRRGR;
       end
       RRRYR: next_state = RRRZR;
       RRRZR: next_state = RRRHR;
       RRRHR: begin
-             if (n_sn) next_state = RRRRG;
-        else if (s_sn) next_state = GRRRR;
-        else if (e_sn) next_state = RGRRR;
-        else if (w_sn) next_state = RRGRR;
-        else           next_state = RRRHR;
+             if (nx_sn) next_state = RRRRG;
+        else if (sx_sn) next_state = GRRRR;
+        else if (ex_sn) next_state = RGRRR;
+        else if (wx_sn) next_state = RRGRR;
+        else            next_state = RRRHR;
       end
       RRRRG: begin
         // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!n_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
-        next_ctr10 = ctr10 + (s_sn || e_sn || w_sn || l_sn || ctr10 > 0);
+        next_ctr10 = ctr10 + (sx_sn || ex_sn || wx_sn || lx_sn || ctr10 > 0);
         // go to yellow when either ctr ends
         next_state = (next_ctr5 == 5 || next_ctr10 == 10) ? RRRRY : RRRRG;
       end
       RRRRY: next_state = RRRRZ;
       RRRRZ: next_state = RRRRH;
       RRRRH: begin
-             if (s_sn) next_state = GRRRR;
-        else if (e_sn) next_state = RGRRR;
-        else if (w_sn) next_state = RRGRR;
-        else if (l_sn) next_state = RRRGR;
-        else           next_state = RRRRH;
+             if (sx_sn) next_state = GRRRR;
+        else if (ex_sn) next_state = RGRRR;
+        else if (wx_sn) next_state = RRGRR;
+        else if (lx_sn) next_state = RRRGR;
+        else            next_state = RRRRH;
       end
     endcase
   end

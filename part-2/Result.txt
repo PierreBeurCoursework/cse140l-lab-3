@@ -4,54 +4,54 @@ s   l   s   l
                                                                 8
                                                                18
                                                                28
-    el                                                         38
-    el                                                         48
-    el                                                         58
-    el      wl           elg       wlg                         68
-    el      wl           elg       wlg                         78
-    el      wl           elg       wlg                         88
-    el      wl           elg       wlg                         98
-    el      wl           elg       wlg                        108
-    el      wl           elg       wlg                        118
-            wl           elg       wlg                        128
-            wl           elg       wlg                        138
-es          wl           elg       wlg                        148
-es          wl           elg       wlg                        158
-es          wl           ely       wly                        168
-es      ws  wl           ely       wly                        178
+    el              esg  elg                                   38
+    el              esg  elg                                   48
+    el              esg  elg                                   58
+    el      wl      esg  elg                                   68
+    el      wl      esg  elg                                   78
+    el      wl      esy  ely                                   88
+    el      wl      esy  ely                                   98
+    el      wl                                                108
+    el      wl                wsg  wlg                        118
+            wl                wsg  wlg                        128
+            wl                wsg  wlg                        138
+es          wl                wsg  wlg                        148
+es          wl                wsg  wlg                        158
+es          wl                wsy  wly                        168
+es      ws  wl                wsy  wly                        178
 es      ws  wl                                                188
-es      ws  wl      esg       wsg                             198
-es      ws  wl      esg       wsg                             208
-es      ws  wl      esg       wsg                             218
-es      ws  wl      esg       wsg                             228
-es      ws  wl      esg       wsg                             238
-es      ws  wl      esg       wsg                             248
-es      ws  wl      esg       wsg                             258
-es      ws  wl      esg       wsg                             268
+es      ws  wl           elg       wlg                        198
+es      ws  wl           elg       wlg                        208
+es      ws  wl           elg       wlg                        218
+es      ws  wl           elg       wlg                        228
+es      ws  wl           elg       wlg                        238
+es      ws  wl           ely       wly                        248
+es      ws  wl           ely       wly                        258
+es      ws  wl                                                268
         ws  wl      esg       wsg                             278
             wl      esg       wsg                             288
-            wl      esy       wsy                             298
-            wl      esy       wsy                             308
-            wl                                                318
-            wl                                                328
-            wl                                                338
+            wl      esg       wsg                             298
+            wl      esg       wsg                             308
+            wl      esg       wsg                             318
+            wl      esy       wsy                             328
+            wl      esy       wsy                             338
             wl                                                348
-            wl                                                358
-            wl                                                368
-            wl                                                378
-            wl                                                388
-            wl                                                398
-            wl                                                408
-            wl                                                418
+            wl                wsg  wlg                        358
+            wl                wsg  wlg                        368
+            wl                wsg  wlg                        378
+            wl                wsg  wlg                        388
+            wl                wsg  wlg                        398
+            wl                wsy  wly                        408
+            wl                wsy  wly                        418
             wl                                                428
-            wl                                                438
-            wl                                                448
-            wl                                                458
-            wl                                                468
-            wl                                                478
-            wl  ns                      nsg                   488
-            wl  ns                      nsg                   498
-            wl  ns                      nsg                   508
+            wl           elg       wlg                        438
+            wl           elg       wlg                        448
+            wl           elg       wlg                        458
+            wl           elg       wlg                        468
+            wl           elg       wlg                        478
+            wl  ns       ely       wly                        488
+            wl  ns       ely       wly                        498
+            wl  ns                                            508
             wl  ns                      nsg                   518
             wl  ns                      nsg                   528
             wl  ns                      nsg                   538
@@ -62,176 +62,176 @@ es      ws  wl      esg       wsg                             268
             wl                          nsy                   588
             wl                          nsy                   598
             wl                                                608
-            wl                                                618
-            wl                                                628
-            wl                                                638
-            wl                                                648
-            wl                                                658
-            wl                                                668
-            wl                                                678
+            wl                wsg  wlg                        618
+            wl                wsg  wlg                        628
+            wl                wsg  wlg                        638
+            wl                wsg  wlg                        648
+            wl                wsg  wlg                        658
+            wl                wsy  wly                        668
+            wl                wsy  wly                        678
             wl                                                688
-            wl                                                698
-            wl                                                708
-            wl                                                718
-            wl                                                728
-            wl                                                738
-            wl  ns                                            748
-            wl  ns                                            758
+            wl           elg       wlg                        698
+            wl           elg       wlg                        708
+            wl           elg       wlg                        718
+            wl           elg       wlg                        728
+            wl           elg       wlg                        738
+            wl  ns       ely       wly                        748
+            wl  ns       ely       wly                        758
             wl  ns                                            768
-            wl  ns                                            778
-            wl  ns                                            788
-            wl  ns                                            798
-            wl  ns                                            808
-            wl  ns                                            818
-            wl  ns                                            828
-            wl  ns                                            838
-    el      wl  ns       elg       wlg                        848
-    el      wl  ns       elg       wlg                        858
-    el      wl  ns       elg       wlg                        868
-    el      wl  ns       elg       wlg                        878
-    el      wl  ns       elg       wlg                        888
-    el      wl  ns       elg       wlg                        898
-    el      wl  ns       elg       wlg                        908
-    el      wl  ns       elg       wlg                        918
-    el      wl  ns       elg       wlg                        928
-    el      wl  ns       elg       wlg                        938
-    el      wl  ns       ely       wly                        948
-    el      wl  ns       ely       wly                        958
-    el      wl  ns                                            968
-    el      wl  ns                      nsg                   978
-    el      wl  ns                      nsg                   988
-    el      wl  ns                      nsg                   998
-    el      wl  ns                      nsg                  1008
-    el      wl  ns                      nsg                  1018
-    el      wl  ns                      nsg                  1028
-    el      wl  ns                      nsg                  1038
-    el      wl                          nsg                  1048
-    el      wl                          nsg                  1058
-es  el  ws  wl  ns                      nsg                  1068
-es  el  ws  wl  ns                      nsy                  1078
-es  el  ws  wl  ns                      nsy                  1088
-es  el  ws  wl  ns                                           1098
-es  el  ws  wl  ns  esg       wsg                            1108
-es  el  ws  wl  ns  esg       wsg                            1118
-es  el  ws  wl  ns  esg       wsg                            1128
-es  el  ws  wl  ns  esg       wsg                            1138
-es  el  ws  wl  ns  esg       wsg                            1148
-es  el  ws  wl  ns  esg       wsg                            1158
-es  el  ws  wl  ns  esg       wsg                            1168
-es  el  ws  wl  ns  esg       wsg                            1178
-es  el  ws  wl  ns  esg       wsg                            1188
-es  el  ws  wl  ns  esg       wsg                            1198
-es  el  ws  wl  ns  esy       wsy                            1208
-es  el  ws  wl  ns  esy       wsy                            1218
-es  el  ws  wl  ns                                           1228
-es  el  ws  wl  ns  esg  elg                                 1238
-es  el  ws  wl  ns  esg  elg                                 1248
-es  el  ws  wl  ns  esg  elg                                 1258
-es  el  ws  wl  ns  esg  elg                                 1268
-es  el  ws  wl  ns  esg  elg                                 1278
-es  el  ws  wl  ns  esg  elg                                 1288
-es  el  ws  wl  ns  esg  elg                                 1298
-es  el  ws  wl  ns  esg  elg                                 1308
-es  el  ws  wl  ns  esg  elg                                 1318
-es  el  ws  wl  ns  esg  elg                                 1328
-es  el  ws  wl  ns  esy  ely                                 1338
-es  el  ws  wl  ns  esy  ely                                 1348
-es  el  ws  wl  ns                                           1358
-es  el  ws  wl  ns            wsg  wlg                       1368
-es  el  ws  wl  ns            wsg  wlg                       1378
-es  el  ws  wl  ns            wsg  wlg                       1388
-es  el  ws  wl  ns            wsg  wlg                       1398
-es  el  ws  wl  ns            wsg  wlg                       1408
-es  el  ws  wl  ns            wsg  wlg                       1418
-es  el  ws  wl  ns            wsg  wlg                       1428
-es  el  ws  wl  ns            wsg  wlg                       1438
-es  el  ws  wl  ns            wsg  wlg                       1448
-es  el  ws  wl  ns            wsg  wlg                       1458
-es  el  ws  wl  ns            wsy  wly                       1468
-es  el  ws  wl  ns            wsy  wly                       1478
-es  el  ws  wl  ns                                           1488
-es  el  ws  wl  ns       elg       wlg                       1498
-es  el  ws  wl  ns       elg       wlg                       1508
-es  el  ws  wl  ns       elg       wlg                       1518
-es  el  ws  wl  ns       elg       wlg                       1528
-es  el  ws  wl  ns       elg       wlg                       1538
-es  el  ws  wl  ns       elg       wlg                       1548
-es  el  ws  wl  ns       elg       wlg                       1558
-es  el  ws  wl  ns       elg       wlg                       1568
-es  el  ws  wl  ns       elg       wlg                       1578
-es  el  ws  wl  ns       elg       wlg                       1588
-es  el  ws  wl  ns       ely       wly                       1598
-es  el  ws  wl  ns       ely       wly                       1608
-es  el  ws  wl  ns                                           1618
-es  el  ws  wl  ns                      nsg                  1628
-es  el  ws  wl  ns                      nsg                  1638
-es  el  ws  wl  ns                      nsg                  1648
-es  el  ws  wl  ns                      nsg                  1658
-es  el  ws  wl  ns                      nsg                  1668
-es  el  ws  wl  ns                      nsg                  1678
-es  el  ws  wl  ns                      nsg                  1688
-es  el  ws  wl  ns                      nsg                  1698
-es  el  ws  wl  ns                      nsg                  1708
-es  el  ws  wl  ns                      nsg                  1718
-es  el  ws  wl  ns                      nsy                  1728
-es  el  ws  wl  ns                      nsy                  1738
-es  el  ws  wl  ns                                           1748
-es  el  ws  wl  ns  esg       wsg                            1758
-es  el  ws  wl  ns  esg       wsg                            1768
-es  el  ws  wl  ns  esg       wsg                            1778
-es  el  ws  wl  ns  esg       wsg                            1788
-es  el  ws  wl  ns  esg       wsg                            1798
-es  el  ws  wl  ns  esg       wsg                            1808
-es  el  ws  wl  ns  esg       wsg                            1818
-es  el  ws  wl  ns  esg       wsg                            1828
-es  el  ws  wl  ns  esg       wsg                            1838
-es  el  ws  wl  ns  esg       wsg                            1848
-es  el  ws  wl  ns  esy       wsy                            1858
-es  el  ws  wl  ns  esy       wsy                            1868
-es  el  ws  wl  ns                                           1878
-es  el  ws  wl  ns  esg  elg                                 1888
-es  el  ws  wl  ns  esg  elg                                 1898
-es  el  ws  wl  ns  esg  elg                                 1908
-es  el  ws  wl  ns  esg  elg                                 1918
-es  el  ws  wl  ns  esg  elg                                 1928
-es  el  ws  wl  ns  esg  elg                                 1938
-es  el  ws  wl  ns  esg  elg                                 1948
-es  el  ws  wl  ns  esg  elg                                 1958
-es  el  ws  wl  ns  esg  elg                                 1968
-es  el  ws  wl  ns  esg  elg                                 1978
-es  el  ws  wl  ns  esy  ely                                 1988
-es  el  ws  wl  ns  esy  ely                                 1998
-es  el  ws  wl  ns                                           2008
-es  el  ws  wl  ns            wsg  wlg                       2018
-es  el  ws  wl  ns            wsg  wlg                       2028
-es  el  ws  wl  ns            wsg  wlg                       2038
-es  el  ws  wl  ns            wsg  wlg                       2048
-es  el  ws  wl  ns            wsg  wlg                       2058
-es  el  ws      ns            wsg  wlg                       2068
-es  el  ws      ns            wsg  wlg                       2078
-es  el  ws      ns            wsg  wlg                       2088
-es  el  ws      ns            wsg  wlg                       2098
-es  el  ws      ns            wsy  wly                       2108
-es  el  ws      ns            wsy  wly                       2118
-es  el  ws      ns                                           2128
-es  el  ws      ns                      nsg                  2138
-es  el  ws      ns                      nsg                  2148
-es  el  ws      ns                      nsg                  2158
-es  el  ws      ns                      nsg                  2168
-es  el  ws      ns                      nsg                  2178
-es  el  ws      ns                      nsg                  2188
-es  el  ws      ns                      nsg                  2198
-es  el  ws      ns                      nsg                  2208
-es  el  ws      ns                      nsg                  2218
-es  el  ws      ns                      nsg                  2228
-es  el  ws      ns                      nsy                  2238
-es  el  ws      ns                      nsy                  2248
-es  el  ws      ns                                           2258
-    el  ws                                                   2268
-    el  ws                                                   2278
-    el  ws                                                   2288
-    el  ws                                                   2298
+            wl  ns                      nsg                   778
+            wl  ns                      nsg                   788
+            wl  ns                      nsg                   798
+            wl  ns                      nsg                   808
+            wl  ns                      nsg                   818
+            wl  ns                      nsg                   828
+            wl  ns                      nsg                   838
+    el      wl  ns                      nsg                   848
+    el      wl  ns                      nsg                   858
+    el      wl  ns                      nsg                   868
+    el      wl  ns                      nsy                   878
+    el      wl  ns                      nsy                   888
+    el      wl  ns                                            898
+    el      wl  ns  esg  elg                                  908
+    el      wl  ns  esg  elg                                  918
+    el      wl  ns  esg  elg                                  928
+    el      wl  ns  esg  elg                                  938
+    el      wl  ns  esg  elg                                  948
+    el      wl  ns  esy  ely                                  958
+    el      wl  ns  esy  ely                                  968
+    el      wl  ns                                            978
+    el      wl  ns            wsg  wlg                        988
+    el      wl  ns            wsg  wlg                        998
+    el      wl  ns            wsg  wlg                       1008
+    el      wl  ns            wsg  wlg                       1018
+    el      wl  ns            wsg  wlg                       1028
+    el      wl  ns            wsy  wly                       1038
+    el      wl                wsy  wly                       1048
+    el      wl                                               1058
+es  el  ws  wl  ns       elg       wlg                       1068
+es  el  ws  wl  ns       elg       wlg                       1078
+es  el  ws  wl  ns       elg       wlg                       1088
+es  el  ws  wl  ns       elg       wlg                       1098
+es  el  ws  wl  ns       elg       wlg                       1108
+es  el  ws  wl  ns       elg       wlg                       1118
+es  el  ws  wl  ns       elg       wlg                       1128
+es  el  ws  wl  ns       elg       wlg                       1138
+es  el  ws  wl  ns       elg       wlg                       1148
+es  el  ws  wl  ns       elg       wlg                       1158
+es  el  ws  wl  ns       ely       wly                       1168
+es  el  ws  wl  ns       ely       wly                       1178
+es  el  ws  wl  ns                                           1188
+es  el  ws  wl  ns                      nsg                  1198
+es  el  ws  wl  ns                      nsg                  1208
+es  el  ws  wl  ns                      nsg                  1218
+es  el  ws  wl  ns                      nsg                  1228
+es  el  ws  wl  ns                      nsg                  1238
+es  el  ws  wl  ns                      nsg                  1248
+es  el  ws  wl  ns                      nsg                  1258
+es  el  ws  wl  ns                      nsg                  1268
+es  el  ws  wl  ns                      nsg                  1278
+es  el  ws  wl  ns                      nsg                  1288
+es  el  ws  wl  ns                      nsy                  1298
+es  el  ws  wl  ns                      nsy                  1308
+es  el  ws  wl  ns                                           1318
+es  el  ws  wl  ns  esg       wsg                            1328
+es  el  ws  wl  ns  esg       wsg                            1338
+es  el  ws  wl  ns  esg       wsg                            1348
+es  el  ws  wl  ns  esg       wsg                            1358
+es  el  ws  wl  ns  esg       wsg                            1368
+es  el  ws  wl  ns  esg       wsg                            1378
+es  el  ws  wl  ns  esg       wsg                            1388
+es  el  ws  wl  ns  esg       wsg                            1398
+es  el  ws  wl  ns  esg       wsg                            1408
+es  el  ws  wl  ns  esg       wsg                            1418
+es  el  ws  wl  ns  esy       wsy                            1428
+es  el  ws  wl  ns  esy       wsy                            1438
+es  el  ws  wl  ns                                           1448
+es  el  ws  wl  ns  esg  elg                                 1458
+es  el  ws  wl  ns  esg  elg                                 1468
+es  el  ws  wl  ns  esg  elg                                 1478
+es  el  ws  wl  ns  esg  elg                                 1488
+es  el  ws  wl  ns  esg  elg                                 1498
+es  el  ws  wl  ns  esg  elg                                 1508
+es  el  ws  wl  ns  esg  elg                                 1518
+es  el  ws  wl  ns  esg  elg                                 1528
+es  el  ws  wl  ns  esg  elg                                 1538
+es  el  ws  wl  ns  esg  elg                                 1548
+es  el  ws  wl  ns  esy  ely                                 1558
+es  el  ws  wl  ns  esy  ely                                 1568
+es  el  ws  wl  ns                                           1578
+es  el  ws  wl  ns            wsg  wlg                       1588
+es  el  ws  wl  ns            wsg  wlg                       1598
+es  el  ws  wl  ns            wsg  wlg                       1608
+es  el  ws  wl  ns            wsg  wlg                       1618
+es  el  ws  wl  ns            wsg  wlg                       1628
+es  el  ws  wl  ns            wsg  wlg                       1638
+es  el  ws  wl  ns            wsg  wlg                       1648
+es  el  ws  wl  ns            wsg  wlg                       1658
+es  el  ws  wl  ns            wsg  wlg                       1668
+es  el  ws  wl  ns            wsg  wlg                       1678
+es  el  ws  wl  ns            wsy  wly                       1688
+es  el  ws  wl  ns            wsy  wly                       1698
+es  el  ws  wl  ns                                           1708
+es  el  ws  wl  ns       elg       wlg                       1718
+es  el  ws  wl  ns       elg       wlg                       1728
+es  el  ws  wl  ns       elg       wlg                       1738
+es  el  ws  wl  ns       elg       wlg                       1748
+es  el  ws  wl  ns       elg       wlg                       1758
+es  el  ws  wl  ns       elg       wlg                       1768
+es  el  ws  wl  ns       elg       wlg                       1778
+es  el  ws  wl  ns       elg       wlg                       1788
+es  el  ws  wl  ns       elg       wlg                       1798
+es  el  ws  wl  ns       elg       wlg                       1808
+es  el  ws  wl  ns       ely       wly                       1818
+es  el  ws  wl  ns       ely       wly                       1828
+es  el  ws  wl  ns                                           1838
+es  el  ws  wl  ns                      nsg                  1848
+es  el  ws  wl  ns                      nsg                  1858
+es  el  ws  wl  ns                      nsg                  1868
+es  el  ws  wl  ns                      nsg                  1878
+es  el  ws  wl  ns                      nsg                  1888
+es  el  ws  wl  ns                      nsg                  1898
+es  el  ws  wl  ns                      nsg                  1908
+es  el  ws  wl  ns                      nsg                  1918
+es  el  ws  wl  ns                      nsg                  1928
+es  el  ws  wl  ns                      nsg                  1938
+es  el  ws  wl  ns                      nsy                  1948
+es  el  ws  wl  ns                      nsy                  1958
+es  el  ws  wl  ns                                           1968
+es  el  ws  wl  ns  esg       wsg                            1978
+es  el  ws  wl  ns  esg       wsg                            1988
+es  el  ws  wl  ns  esg       wsg                            1998
+es  el  ws  wl  ns  esg       wsg                            2008
+es  el  ws  wl  ns  esg       wsg                            2018
+es  el  ws  wl  ns  esg       wsg                            2028
+es  el  ws  wl  ns  esg       wsg                            2038
+es  el  ws  wl  ns  esg       wsg                            2048
+es  el  ws  wl  ns  esg       wsg                            2058
+es  el  ws      ns  esg       wsg                            2068
+es  el  ws      ns  esy       wsy                            2078
+es  el  ws      ns  esy       wsy                            2088
+es  el  ws      ns                                           2098
+es  el  ws      ns  esg  elg                                 2108
+es  el  ws      ns  esg  elg                                 2118
+es  el  ws      ns  esg  elg                                 2128
+es  el  ws      ns  esg  elg                                 2138
+es  el  ws      ns  esg  elg                                 2148
+es  el  ws      ns  esg  elg                                 2158
+es  el  ws      ns  esg  elg                                 2168
+es  el  ws      ns  esg  elg                                 2178
+es  el  ws      ns  esg  elg                                 2188
+es  el  ws      ns  esg  elg                                 2198
+es  el  ws      ns  esy  ely                                 2208
+es  el  ws      ns  esy  ely                                 2218
+es  el  ws      ns                                           2228
+es  el  ws      ns            wsg  wlg                       2238
+es  el  ws      ns            wsg  wlg                       2248
+es  el  ws      ns            wsg  wlg                       2258
+    el  ws                    wsg  wlg                       2268
+    el  ws                    wsg  wlg                       2278
+    el  ws                    wsy  wly                       2288
+    el  ws                    wsy  wly                       2298
     el                                                       2308
-    el                                                       2318
+    el                   elg       wlg                       2318
 
 count =           5
