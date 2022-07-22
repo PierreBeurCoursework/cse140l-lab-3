@@ -80,7 +80,7 @@ logic s_sn, e_sn, w_sn, l_sn, n_sn;
       YRRRR: next_state = ZRRRR;
       ZRRRR: next_state = HRRRR;
       HRRRR: begin
-             if (e_sm) next_state = RGRRR;
+             if (e_sn) next_state = RGRRR;
         else if (w_sn) next_state = RRGRR;
         else if (l_sn) next_state = RRRGR;
         else if (n_sn) next_state = RRRRG;
