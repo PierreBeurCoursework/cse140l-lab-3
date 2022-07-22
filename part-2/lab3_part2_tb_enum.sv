@@ -23,11 +23,9 @@ colors  e_left_light  ,       // left arrow e turn onto n
 // input ports = logics above, with name changes noted
 // output ports = wires above (each 2 bits wide)
 traffic_light_controller dut(
-  .e_straight_sensor(e_str_sensor),
-  .w_straight_sensor(w_str_sensor),
   .clk, .reset,
-  .e_left_sensor, .w_left_sensor, .ns_sensor,
-  .e_str_light, .w_str_light, .e_left_light, .w_left_light, .ns_light);
+  .e_left_sensor, .e_str_sensor, .w_left_sensor, .w_str_sensor, .ns_sensor,
+  .e_left_light,  .e_str_light,  .w_left_light,  .w_str_light,  .ns_light);
 
 colors e_l, e_s, w_l, w_s, ns;    // red, yellow, green for each of 5 directions
 assign e_l = e_left_light;        // just shorthand names for these
