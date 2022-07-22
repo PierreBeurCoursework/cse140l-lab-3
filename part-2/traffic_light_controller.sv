@@ -46,7 +46,7 @@ module traffic_light_controller(
       ctr10         <= next_ctr10;
     end
 
-logic es_ws, el_es, wl_ws, el_wl, ns;
+logic s_sn, e_sn, w_sn, l_sn, n_sn;
 
 // combinational part of state machine ("C1" block in the Harris & Harris Moore machine diagram)
 // default needed because only 6 of 8 possible states are defined/used
@@ -70,7 +70,7 @@ logic es_ws, el_es, wl_ws, el_wl, ns;
      increment 10-counter whenever I have a green light
 */
       GRRRR: begin
-        // start ctr5 when a gap in ES & WS traffic is detected
+        // start ctr5 when a gap in traffic is detected
         next_ctr5  = ctr5  + (!s_sn || ctr5 > 0);
         // start ctr10 when cross traffic is detected
         next_ctr10 = ctr10 + (e_sn || w_sn || l_sn || n_sn || ctr10 > 0);
@@ -154,22 +154,55 @@ logic es_ws, el_es, wl_ws, el_wl, ns;
         else if (l_sn) next_state = RRRGR;
         else           next_state = RRRRH;
       end
-      
     endcase
   end
 
 // combination output driver  ("C2" block in the Harris & Harris Moore machine diagram)
   always_comb begin
-     ew_str_light = red;                // cover all red plus undefined cases
-    ew_left_light = red;
-         ns_light = red;
+    e_left_light = red;                 // cover all red plus undefined cases
+     e_str_light = red;
+    w_left_light = red;
+     w_str_light = red;
+        ns_light = red;
     case(present_state)      // Moore machine
-      GRR:      ew_str_light = green;
-      YRR,ZRR:  ew_str_light = yellow;  // my dual yellow states -- brute force way to make yellow last 2 cycles
-      RGR:     ew_left_light = green;
-      RYR,RZR: ew_left_light = yellow;
-      RRG:          ns_light = green;
-      RRY,RRZ:      ns_light = yellow;
+      GRRRR: begin
+          e_str_light = green;
+          w_str_light = green;
+        end
+      YRRRR,ZRRRR: begin
+          e_str_light = yellow;
+          w_str_light = yellow;
+        end
+      RGRRR: begin
+          e_left_light = green;
+           e_str_light = green;
+        end
+      RYRRR,RZRRR: begin
+          e_left_light = yellow;
+           e_str_light = yellow;
+        end
+      RRGRR: begin
+          w_left_light = green;
+           w_str_light = green;
+        end
+      RRYRR,RRZRR: begin
+          w_left_light = yellow;
+           w_str_light = yellow;
+        end
+      RRRGR: begin
+          e_left_light = green;
+          w_left_light = green;
+        end
+      RRRYR,RRRZR: begin
+          e_left_light = yellow;
+          w_left_light = yellow;
+        end
+      RRRRG: begin
+          ns_light = green;
+        end
+      RRRRY,RRRRZ: begin
+          ns_light = yellow;
+        end
     endcase
   end
 
