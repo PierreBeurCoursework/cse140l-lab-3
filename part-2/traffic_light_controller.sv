@@ -1,5 +1,5 @@
 // traffic light controller
-// CSE140L 3-street, 12-state version; EW straights coupled; EW lefts coupled
+// CSE140L 3-street, 30-state version; EW straights independent; EW lefts independent
 // inserts all-red after each yellow
 // uses enumerated variables for states and for red-yellow-green
 // green-to-yellow 5 cycles after own traffic disappears
